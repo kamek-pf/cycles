@@ -1,0 +1,40 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.31.2.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: c0de5a728a81c086febf1154a0cd69cefd9c6341da0e080252648580497baea8
+
+name:           hs
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/kamek-pf/hs#readme>
+homepage:       https://github.com/kamek-pf/hs#readme
+bug-reports:    https://github.com/kamek-pf/hs/issues
+author:         Bertrand Bousquet
+maintainer:     b.kamek@gmail.com
+copyright:      2020 Bertrand Bousquet
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    ChangeLog.md
+
+source-repository head
+  type: git
+  location: https://github.com/kamek-pf/hs
+
+executable hs-exe
+  main-is: Main.hs
+  other-modules:
+      Module
+      Module.ThingA
+      Module.ThingB
+      Paths_hs
+  hs-source-dirs:
+      app
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+  default-language: Haskell2010
